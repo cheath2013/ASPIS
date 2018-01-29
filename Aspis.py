@@ -3,7 +3,7 @@
 Verification library for seizure prediction and detection algorithm. Takes in brain wave data and
 detects and predicts when seizures will happen. Uses a modified version of pacpy.pac named "pacpyC" due to 
 an issue with numpy 1.13 not accepting floats as an index.
-Modification in firfTest.py @ line 48 'int(Ntaps)'
+Modification in firfC.py @ line 48 'int(Ntaps)'
 
 """
 
