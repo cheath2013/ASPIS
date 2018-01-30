@@ -178,7 +178,7 @@ def getPlvthresh(f, data, sampleFreq, calcRate, startPoint, endPoint, wrkIndex, 
     print("working channel:", siglabs[wrkIndex])
     print("reference channel:", siglabs[refIndex])
     print("Testing duration: %s data points" % (int(end) - int(start)))
-
+    
     # Read the EEG data as instructed
     for i in range(start, end): 
       
@@ -196,8 +196,8 @@ def getPlvthresh(f, data, sampleFreq, calcRate, startPoint, endPoint, wrkIndex, 
             pre-ictal and ictal behavior.
 
             """
-            wkFiltered = firf(wkSensor, (6,12), 256, 2)
-            refFiltered = firf(refSensor, (6,12), 256, 2)
+            wkFiltered = firf(wkSensor, (13,30), 256)
+            refFiltered = firf(refSensor, (13,30), 256)
 
 
             """
@@ -217,7 +217,7 @@ def getPlvthresh(f, data, sampleFreq, calcRate, startPoint, endPoint, wrkIndex, 
             pVal = math.ceil(pVal*100)/100 # round number to the hundreths decimal
 
             pkey = pVal
-            if pVal > .6 and pVal < .99: 
+            if pVal > .1 and pVal < .99: 
                 #print(pVal)
                 if pkey in pvalDict:
                     value = pvalDict[pkey]

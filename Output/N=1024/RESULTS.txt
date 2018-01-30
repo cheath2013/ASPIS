@@ -1,0 +1,15 @@
+Trial 1 - fp1_f7 fp1_f3
+
+chb04_02 - False Positive
+chb04_03 - False Positive
+chb04_05 - True Positive
+chb04_08 - True Positive
+chb04_28 - True Positive
+
+Trial 2 - t7_ft9 cz_pz
+
+chb04_02 - True Negative
+chb04_03 - True Negative
+chb04_05 - True Positive
+chb04_08 - False Negative
+chb04_28 - False Negative
